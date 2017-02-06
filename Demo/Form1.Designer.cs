@@ -37,6 +37,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.picCaptcha = new System.Windows.Forms.PictureBox();
+            this.txtCaptcha = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.picCaptcha)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -122,11 +126,39 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // picCaptcha
+            // 
+            this.picCaptcha.Location = new System.Drawing.Point(464, 28);
+            this.picCaptcha.Name = "picCaptcha";
+            this.picCaptcha.Size = new System.Drawing.Size(206, 113);
+            this.picCaptcha.TabIndex = 9;
+            this.picCaptcha.TabStop = false;
+            // 
+            // txtCaptcha
+            // 
+            this.txtCaptcha.Location = new System.Drawing.Point(464, 147);
+            this.txtCaptcha.Name = "txtCaptcha";
+            this.txtCaptcha.Size = new System.Drawing.Size(206, 20);
+            this.txtCaptcha.TabIndex = 10;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(464, 173);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "Login Againt";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 322);
+            this.ClientSize = new System.Drawing.Size(682, 402);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.txtCaptcha);
+            this.Controls.Add(this.picCaptcha);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -139,6 +171,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picCaptcha)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,6 +188,9 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox picCaptcha;
+        private System.Windows.Forms.TextBox txtCaptcha;
+        private System.Windows.Forms.Button button5;
     }
 }
 
